@@ -24,3 +24,10 @@ export default defineConfig(({mode}) => {
     },
   };
 });
+import { defineConfig } from 'vite'
+import react from '@vitejs/react-refresh' // 혹은 사용 중인 플러그인
+
+export default defineConfig({
+  base: '/naesin_go/', // 👈 이 줄을 꼭 추가해주세요!
+  plugins: [react()],
+})
